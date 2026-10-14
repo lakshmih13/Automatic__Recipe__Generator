@@ -1,0 +1,173 @@
+/* Manage Categories */
+.container h2 {
+  color: var(--text-primary);
+  font-weight: 800;
+  font-size: 24px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
+}
+
+.container h3 {
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 12px;
+}
+
+.card {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 24px;
+  border-radius: var(--radius-lg) !important;
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow-md) !important;
+  color: var(--text-primary);
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card .form-control {
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 12px 16px !important;
+  font-size: 15px;
+  transition: all var(--transition-base);
+}
+
+.card .form-control:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px var(--primary-glow) !important;
+}
+
+.card .form-control::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.dropdown-list {
+  border: 1px solid var(--border) !important;
+  position: absolute;
+  background: var(--bg-elevated) !important;
+  max-height: 120px;
+  overflow-y: auto;
+  width: 240px;
+  z-index: 10;
+  list-style: none;
+  padding: 4px !important;
+  margin: 4px 0 0 0;
+  border-radius: var(--radius-sm) !important;
+  box-shadow: var(--shadow-lg);
+}
+
+.dropdown-list li {
+  padding: 10px 16px;
+  cursor: pointer;
+  margin: 2px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 14px;
+  transition: all var(--transition-fast);
+}
+
+.dropdown-list li:hover {
+  background: rgba(245, 158, 11, 0.1) !important;
+  color: var(--primary-light);
+}
+
+.container .btn-primary {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%) !important;
+  border: none !important;
+  color: var(--bg-primary) !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 10px 24px !important;
+  transition: all var(--transition-base) !important;
+}
+
+.container .btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow) !important;
+}
+
+/* Table */
+.table {
+  margin-top: 24px !important;
+  background: var(--bg-card) !important;
+  border-radius: var(--radius-md) !important;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.table thead {
+  background: var(--bg-elevated) !important;
+}
+
+.table th {
+  color: var(--text-secondary) !important;
+  font-weight: 600;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  padding: 14px 16px !important;
+  border-bottom: 1px solid var(--border) !important;
+  border-color: var(--border) !important;
+}
+
+.table td {
+  color: var(--text-primary) !important;
+  padding: 12px 16px !important;
+  border-color: var(--border) !important;
+  vertical-align: middle;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background: rgba(255, 255, 255, 0.02) !important;
+}
+
+.table-striped > tbody > tr:nth-of-type(even) {
+  background: transparent !important;
+}
+
+.table tbody tr:hover {
+  background: rgba(245, 158, 11, 0.04) !important;
+}
+
+.subcategory-container {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.subcategory-item {
+  margin-bottom: 0 !important;
+  padding: 8px 12px !important;
+  background: var(--bg-elevated) !important;
+  border-radius: var(--radius-sm) !important;
+  border: 1px solid var(--border);
+  transition: all var(--transition-fast);
+  color: var(--text-secondary);
+}
+
+.subcategory-item:hover {
+  background: rgba(245, 158, 11, 0.06) !important;
+  border-color: var(--primary);
+}
+
+.subcategory-item .btn-danger {
+  background: linear-gradient(135deg, var(--danger) 0%, #f87171 100%) !important;
+  border: none !important;
+  border-radius: var(--radius-sm) !important;
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  padding: 4px 12px !important;
+  transition: all var(--transition-base) !important;
+}
+
+.subcategory-item .btn-danger:hover {
+  transform: scale(1.05);
+  box-shadow: 0 2px 12px rgba(239, 68, 68, 0.4) !important;
+}

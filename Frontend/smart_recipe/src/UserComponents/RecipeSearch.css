@@ -1,0 +1,109 @@
+/* Recipe Search */
+.container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Inter', sans-serif;
+  color: var(--text-primary);
+}
+
+.container h1 {
+  color: var(--primary-light) !important;
+  text-shadow: none !important;
+  font-weight: 800;
+  font-size: 28px;
+}
+
+.search-input {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 14px 20px !important;
+  font-size: 15px !important;
+  margin: 20px 0 !important;
+  width: 100%;
+  transition: all var(--transition-base) !important;
+}
+
+.search-input:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px var(--primary-glow) !important;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.recipe-card-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.recipe-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: auto !important;
+  margin: 0 !important;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg) !important;
+  box-shadow: var(--shadow-sm);
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  min-height: 100px;
+  overflow: hidden;
+  animation: fadeInUp 0.4s ease-out both;
+}
+
+.recipe-card:hover {
+  transform: translateY(-6px) scale(1.02);
+  border-color: var(--primary);
+  box-shadow: 0 12px 40px rgba(245, 158, 11, 0.12);
+}
+
+.recipe-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  transition: transform var(--transition-slow);
+}
+
+.recipe-card:hover img {
+  transform: scale(1.05);
+}
+
+.recipe-card h2 {
+  margin: 12px 16px 8px !important;
+  font-size: 1.1em !important;
+  color: var(--text-primary) !important;
+  text-align: left !important;
+  font-weight: 600;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  padding: 0 16px 12px;
+  gap: 2px;
+}
+
+.star {
+  color: var(--text-muted) !important;
+  font-size: 18px;
+}
+
+.star.filled {
+  color: #fbbf24 !important;
+}
+
+.average-rating {
+  margin-left: 8px;
+  font-size: 13px !important;
+  color: var(--text-secondary) !important;
+  font-weight: 500;
+}

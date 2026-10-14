@@ -1,0 +1,12 @@
+.update-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Adjust height to center the card vertically */
+}
+
+.card {
+  margin-top: 20px; /* Decrease the top margin */
+  width: 100%; /* Optional: make the card responsive */
+  max-width: 500px; /* Optional: set a max width */
+}

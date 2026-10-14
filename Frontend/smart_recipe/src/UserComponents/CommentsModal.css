@@ -1,0 +1,97 @@
+/* Comments Modal */
+.comments-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.comments-modal {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border);
+  padding: 28px;
+  border-radius: var(--radius-xl);
+  width: 450px;
+  max-width: 90%;
+  position: relative;
+  overflow-y: auto;
+  max-height: 80vh;
+  box-shadow: var(--shadow-lg);
+  color: var(--text-primary);
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.comments-modal h2 {
+  color: var(--text-primary) !important;
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.comments-modal .close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  border: none;
+  background: none !important;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--text-muted) !important;
+  transition: color var(--transition-fast);
+  padding: 0 !important;
+}
+
+.comments-modal .close-button:hover {
+  color: var(--danger) !important;
+}
+
+.comment {
+  margin-bottom: 16px;
+  text-align: left;
+  padding: 16px;
+  background: var(--bg-elevated);
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary);
+}
+
+.comment-email {
+  margin: 0 0 4px 0;
+}
+
+.comment-email strong {
+  color: var(--primary-light) !important;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.comment-content {
+  margin: 6px 0;
+  color: var(--text-secondary) !important;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.comment .rating {
+  margin-top: 6px;
+  padding: 0;
+}
+
+.comment .star {
+  color: var(--text-muted) !important;
+  font-size: 16px;
+}
+
+.comment .star.filled {
+  color: #fbbf24 !important;
+}
+
+.comments-modal p {
+  color: var(--text-muted) !important;
+  text-align: center;
+  font-style: italic;
+}

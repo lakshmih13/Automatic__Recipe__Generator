@@ -1,0 +1,53 @@
+/* Manage Ingredients - uses global table/card styles */
+.container h2 {
+  color: var(--text-primary);
+}
+
+.table-bordered {
+  border-color: var(--border) !important;
+}
+
+.table-bordered th,
+.table-bordered td {
+  border-color: var(--border) !important;
+}
+
+.table-hover tbody tr:hover {
+  background: rgba(245, 158, 11, 0.04) !important;
+}
+
+.table-light {
+  background: var(--bg-elevated) !important;
+}
+
+.table-light th {
+  background: var(--bg-elevated) !important;
+  color: var(--text-secondary) !important;
+}
+
+.btn-warning {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%) !important;
+  border: none !important;
+  color: var(--bg-primary) !important;
+  font-weight: 700 !important;
+  border-radius: var(--radius-sm) !important;
+  transition: all var(--transition-base) !important;
+}
+
+.btn-warning:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-glow) !important;
+}
+
+.btn-danger {
+  background: linear-gradient(135deg, var(--danger) 0%, #f87171 100%) !important;
+  border: none !important;
+  border-radius: var(--radius-sm) !important;
+  font-weight: 600 !important;
+  transition: all var(--transition-base) !important;
+}
+
+.btn-danger:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.3) !important;
+}

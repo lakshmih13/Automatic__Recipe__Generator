@@ -1,0 +1,96 @@
+/* Recipe Form */
+.c-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 36px;
+  margin: 20px auto;
+  max-width: 700px;
+  min-height: 450px;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  animation: fadeInUp 0.5s ease-out;
+  color: var(--text-primary);
+}
+
+.c-card label {
+  color: var(--text-secondary) !important;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  margin-bottom: 6px;
+  display: block;
+}
+
+input, select, textarea {
+  width: 100%;
+  margin: 8px 0 16px 0;
+  padding: 12px 16px;
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-sm) !important;
+  background: var(--bg-input) !important;
+  color: var(--text-primary) !important;
+  font-family: 'Inter', sans-serif;
+  font-size: 15px;
+  transition: all var(--transition-base);
+}
+
+input:focus, select:focus, textarea:focus {
+  outline: none;
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+input::placeholder, textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+select option {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.ingredients-card {
+  border: 1px solid var(--border) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 16px !important;
+  margin-top: 16px;
+  max-height: 200px;
+  overflow-y: auto;
+  background: var(--bg-elevated) !important;
+}
+
+.ingredients-list {
+  max-height: 300px;
+  overflow-y: scroll;
+}
+
+.ingredient-item {
+  color: var(--text-secondary);
+}
+
+.ingredient-item span {
+  color: var(--text-secondary) !important;
+}
+
+input[type="checkbox"] {
+  width: auto !important;
+  margin: 0 10px 0 0 !important;
+  accent-color: var(--primary);
+}
+
+input[type="file"]::file-selector-button {
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+  color: var(--bg-primary);
+  border: none;
+  padding: 8px 20px;
+  border-radius: var(--radius-sm);
+  font-weight: 600;
+  cursor: pointer;
+  margin-right: 12px;
+}

@@ -1,0 +1,192 @@
+/* Modal (Recipe detail with comment/rating) */
+.show-all-modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 0, 0, 0.75);
+  backdrop-filter: blur(8px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.show-all-modal-content {
+  background: var(--bg-card) !important;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  width: 95%;
+  max-width: 1000px;
+  max-height: 95vh;
+  height: auto;
+  padding: 32px;
+  overflow-y: auto;
+  box-shadow: var(--shadow-lg);
+  color: var(--text-primary);
+  animation: fadeInUp 0.3s ease-out;
+}
+
+.show-all-modal-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.show-all-modal-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 0;
+  width: 100%;
+  max-height: 400px;
+  overflow: hidden;
+  border-radius: var(--radius-lg);
+}
+
+.show-all-modal-image img {
+  width: 100%;
+  height: 100%;
+  max-height: 400px;
+  border-radius: var(--radius-lg);
+  object-fit: cover;
+}
+
+.show-all-modal-details {
+  display: flex;
+  flex-direction: column;
+  color: var(--text-primary);
+}
+
+.show-all-modal-details h2 {
+  color: var(--text-primary) !important;
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.show-all-modal-close-button {
+  margin-top: 0;
+  margin-left: auto !important;
+  margin-bottom: 12px;
+  padding: 8px 20px;
+  border: none;
+  background: var(--danger) !important;
+  border-radius: var(--radius-sm);
+  color: white !important;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 14px;
+  transition: all var(--transition-base);
+  float: right;
+}
+
+.show-all-modal-close-button:hover {
+  background: var(--danger-dark) !important;
+  transform: scale(1.05);
+}
+
+.show-all-modal-rating {
+  margin-top: 16px;
+}
+
+.show-all-modal-description-nutrition {
+  display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  gap: 16px;
+}
+
+.show-all-modal-description, .show-all-modal-nutrition {
+  overflow-y: auto;
+  max-height: 200px;
+  margin-bottom: 0;
+  background: var(--bg-elevated);
+  padding: 16px;
+  border-radius: var(--radius-sm);
+  border-left: 3px solid var(--primary);
+}
+
+.show-all-modal-description h3, .show-all-modal-nutrition h3 {
+  margin-top: 0;
+  text-align: left;
+  color: var(--primary-light) !important;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px !important;
+}
+
+.show-all-modal-description p, .show-all-modal-nutrition pre {
+  margin: 0;
+  text-align: left;
+  white-space: pre-wrap;
+  color: var(--text-secondary) !important;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.star {
+  cursor: pointer;
+  font-size: 24px;
+  color: var(--text-muted) !important;
+  transition: color var(--transition-fast);
+}
+
+.star.filled {
+  color: #fbbf24 !important;
+}
+
+.show-all-modal-comment {
+  margin-top: 20px;
+}
+
+.show-all-modal-comment h3 {
+  color: var(--text-primary) !important;
+  font-size: 16px;
+  font-weight: 700;
+  margin-left: 0 !important;
+  margin-bottom: 8px;
+}
+
+.show-all-modal-comment textarea {
+  width: 100% !important;
+  resize: none;
+  background: var(--bg-input) !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+  border-radius: var(--radius-sm) !important;
+  padding: 12px 16px !important;
+  font-size: 14px;
+  margin: 0 !important;
+}
+
+.show-all-modal-comment textarea:focus {
+  border-color: var(--primary) !important;
+  box-shadow: 0 0 0 3px var(--primary-glow);
+  outline: none;
+}
+
+.show-all-modal-comment textarea::placeholder {
+  color: var(--text-muted) !important;
+}
+
+.show-all-modal-comment button {
+  padding: 12px 28px;
+  border: none;
+  border-radius: var(--radius-sm);
+  background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%) !important;
+  color: var(--bg-primary) !important;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 700;
+  transition: all var(--transition-base);
+  margin-left: 0 !important;
+  margin-top: 12px !important;
+  margin-bottom: 4px;
+}
+
+.show-all-modal-comment button:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-glow);
+}
